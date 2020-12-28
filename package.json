@@ -1,6 +1,6 @@
 {
   "name": "feiyu-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "飞羽个人工具类",
   "main": "index.js",
   "scripts": {

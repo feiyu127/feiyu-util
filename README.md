@@ -14,11 +14,6 @@
 
 线程池相关操作，主要限制同时执行的异步任务数
 
-| method               | desc                         |
-| -------------------- | ---------------------------- |
-| PromisePool          | PromisePool 对象，内部使用， |
-| addTaskToPromisePool | 添加任务列表到线程池         |
-
 ```
 /**
  * dataList 数据集合
@@ -27,9 +22,9 @@
  */
 addTaskToPromisePool(dataList, dataHandle, success)
 
-const { addTaskToPromisePool } = require('feiyu-util');
+const PromisePool= require('feiyu-util');
 let fileContentArray = new Array(fileList.length);
-addTaskToPromisePool(fileList,
+PromisePool.addTaskToPromisePool(fileList,
     (file, index) => {
         fs.readFile(file, { encoding: 'utf8' }, (err, data) => {
             fileContentArray[index] = data;
@@ -55,7 +50,7 @@ addTaskToPromisePool(fileList,
 | writeFile      | 写文件内容到文件里，如是对象，则会使用 json 格式存储 |
 | mkdir          | 创建目录，带递归                                     |
 
-## SSHUtil
+## SSHUtil(已废弃)
 
 ssh2 工具类
 

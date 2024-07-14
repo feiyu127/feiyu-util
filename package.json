@@ -1,15 +1,18 @@
 {
   "name": "feiyu-util",
-  "version": "1.0.4",
+  "version": "2.0.1",
   "description": "飞羽个人工具类",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/feiyu127/feiyu-util.git"
   },
   "author": "feiyu127",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
+  }
 }
